@@ -113,6 +113,33 @@ then to run all the tests
 ./build/ctest
 ```
 
+if this results in 
+```
+*********************************
+No test configuration file found!
+*********************************
+Usage
+
+  ctest [options]
+```
+
+then run 
+
+```
+cd algorithms
+mkdir build
+cd build
+cmake ../
+make
+ctest
+```
+
+in that order and it will run the specific tests for the algorithms project. to build the battleship tests just 
+```
+cd battleship
+```
+
+from the root directory and it will specify those tests
 ### In Editor
 
 to build the project you can use the built in hotkey: Ctrl+Shift+B
